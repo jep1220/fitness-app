@@ -5,6 +5,25 @@ const routes = require('./routes/index');
 const htmlRoutes = require('./routes/htmlRoutes');
 
 
+// Set up Express
+const PORT = process.env.PORT || 3000;
+const app = express();
+
+// Set up logger
+app.use(logger('dev'));
+
+// Set up Express app to handle data parsing
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+// Set up Express app to server static files
+app.use(express.static('public'));
+
+// Set up api routes
+app.use('/api', routes);
+
+// Set up html routes
+app.use('/', htmlRoutes);
+
 
 // connect to Mongo database with Mongoose
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/workout', {
