@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const routes = require('./routes/index');
 const htmlRoutes = require('./routes/htmlRoutes');
 
+require('dotenv').config()
 
 // Set up Express
 const PORT = process.env.PORT || 3000;
@@ -24,7 +25,6 @@ app.use('/api', routes);
 // Set up html routes
 app.use('/', htmlRoutes);
 
-
 // connect to Mongo database with Mongoose
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/workout', {
 	useNewUrlParser: true,
@@ -33,3 +33,8 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/workout', {
 	useFindAndModify: false
 }
 );
+
+// Listener
+app.listen(PORT, () => {
+	console.log(`App running on port ${PORT}!`);
+});
