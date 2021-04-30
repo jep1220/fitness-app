@@ -1,6 +1,5 @@
 # Wonder Workout Tracker
 
-[![License: MIT](https://img.shields.io/github/license/tiffany-brand/wonder-workout-tracker?style=plastic)](./LICENSE)
 
 ## Table of Contents
 
@@ -14,25 +13,16 @@
 * [Questions](#questions)
 
 ## Description
-Track workouts to keep your body wonderful! A workout tracking app using Node.js, Express, MongoDB, and Mongoose. When a user begins the application, they view a page with the stats of the last workout including the workout date, total duration, number of exercises performed, and total distance, weight, sets, and reps. The user can then create a new workout, or continue with the last workout. They can then add cardio or resistance exercises to the last workout or a new workout. The dashboard displays statistics about the workouts.
-
-### User Story
-
-AS A user concerned about my health,
-
-I WANT to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
-
-SO THAT I can track my fitness and improve my exercise routine
-
+This fitness app uses Node.js, Express, MongoDB, and Mongoose. It allows the user to either continue a workout, or continue a previous workout. 
 ## Deployed Link
 
-[Wonder Workout Tracker](https://wonder-workout-tracker.herokuapp.com/)
+[Wonder Workout Tracker](https://https://fitness-ap.herokuapp.com/?id=608b81a972db650015b211f2/)
 
 ## Screenshots
 
-![workout-index](https://user-images.githubusercontent.com/16748389/96280903-942e9280-0fa6-11eb-8211-5e7a00fc97a7.JPG)
-![workout-add](https://user-images.githubusercontent.com/16748389/96280900-9395fc00-0fa6-11eb-8933-a1ac7bb01595.JPG)
-![workout-dashboard](https://user-images.githubusercontent.com/16748389/96280902-942e9280-0fa6-11eb-8609-e1d9527b2a71.JPG)
+[image](https://user-images.githubusercontent.com/38770396/116647349-2be64380-a92f-11eb-83bb-9e24ca8875ed.png
+[image](https://user-images.githubusercontent.com/38770396/116647500-9303f800-a92f-11eb-91a4-edfe87d08aa9.png)
+[image](https://user-images.githubusercontent.com/38770396/116647535-a616c800-a92f-11eb-86cf-3686fbf838cf.png)
 
 
 ## Technologies
